@@ -3,7 +3,7 @@ class StorageAndBoxes {
         Storage storage = new Storage();
         Box box1 = new Box(12, "Forks");
         Box box2 = new Box(1, "Milk");
-        Box box3 = new Box(0, "Nothing");
+        Box box3 = new Box(0, "Eggs");
         storage.putBox(box1);
         storage.putBox(box2);
         storage.putBox(box3);
@@ -14,7 +14,7 @@ class StorageAndBoxes {
 
 class Storage {
     String[] boxes = new String[10];
-    static int index = 0;
+    int index = 0;
 
     public void putBox(Box b) {
         int o = b.weight;
